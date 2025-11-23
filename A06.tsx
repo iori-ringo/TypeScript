@@ -6,7 +6,7 @@ type DateRange = {
 }
 
 const Main = (input:string) => {
-    // const lines :string[] = input.split("\n").map((line) => {line.trim()});
+    // const lines :string[] = input.split("\n").map((line) => {line.trim()});ダメな例
     const lines :string[] = input.split("\n").map((line) => line.trim());
     const [day_num,q_num] = lines[0]!.split(" ").map((num) => Number(num));
     const days :number[] = lines[1]!.split(" ").map((num) => Number(num));
