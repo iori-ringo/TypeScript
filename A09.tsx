@@ -9,6 +9,7 @@ const Main = (input :string) =>{
     const snow_day_num = Number(snow_day_Str);
 
     let kingdom :number[][] = Array.from({length : h_num},() => new Array(w_num).fill(0));
+    // ⇒２次元配列の初期化
     for (let i = 0;i<snow_day_num;i++){
         const [h_start_Str,w_start_Str,h_end_Str,w_end_Str] = lines[index++]!.split(" ");
         const h_start :number = Number(h_start_Str);
